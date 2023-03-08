@@ -41,7 +41,7 @@
             // txtLogin
             // 
             this.txtLogin.Location = new System.Drawing.Point(169, 121);
-            this.txtLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLogin.Margin = new System.Windows.Forms.Padding(4);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(198, 29);
             this.txtLogin.TabIndex = 0;
@@ -69,7 +69,7 @@
             // txtSenha
             // 
             this.txtSenha.Location = new System.Drawing.Point(169, 182);
-            this.txtSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(4);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(198, 29);
             this.txtSenha.TabIndex = 2;
@@ -77,18 +77,19 @@
             // btoCadastrar
             // 
             this.btoCadastrar.Location = new System.Drawing.Point(169, 249);
-            this.btoCadastrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btoCadastrar.Margin = new System.Windows.Forms.Padding(4);
             this.btoCadastrar.Name = "btoCadastrar";
             this.btoCadastrar.Size = new System.Drawing.Size(140, 37);
             this.btoCadastrar.TabIndex = 4;
             this.btoCadastrar.Text = "OK";
             this.btoCadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btoCadastrar.UseVisualStyleBackColor = true;
+            this.btoCadastrar.Click += new System.EventHandler(this.btoCadastrar_Click);
             // 
             // btoCancelar
             // 
             this.btoCancelar.Location = new System.Drawing.Point(388, 249);
-            this.btoCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btoCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btoCancelar.Name = "btoCancelar";
             this.btoCancelar.Size = new System.Drawing.Size(131, 37);
             this.btoCancelar.TabIndex = 5;
@@ -99,8 +100,12 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Financeiro",
+            "SAC",
+            "RH"});
             this.comboBox1.Location = new System.Drawing.Point(376, 121);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(143, 29);
             this.comboBox1.TabIndex = 6;
@@ -129,9 +134,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtLogin);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginRH";
             this.Text = "LoginRH";
+            this.Load += new System.EventHandler(this.LoginRH_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

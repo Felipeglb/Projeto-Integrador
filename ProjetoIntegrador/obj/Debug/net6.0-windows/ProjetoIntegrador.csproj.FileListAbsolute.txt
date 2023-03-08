@@ -11,7 +11,6 @@ C:\Users\felipe.glbezerra\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\D
 C:\Users\felipe.glbezerra\source\repos\ProjetoIntegrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\felipe.glbezerra\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.AssemblyReference.cache
 C:\Users\felipe.glbezerra\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.LoginRH.resources
-C:\Users\felipe.glbezerra\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.RH.resources
 C:\Users\felipe.glbezerra\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.GenerateResource.cache
 C:\Users\felipe.glbezerra\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\felipe.glbezerra\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.AssemblyInfoInputs.cache
@@ -23,3 +22,5 @@ C:\Users\felipe.glbezerra\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\D
 C:\Users\felipe.glbezerra\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.pdb
 C:\Users\felipe.glbezerra\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.genruntimeconfig.cache
 C:\Users\felipe.glbezerra\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ref\ProjetoIntegrador.dll
+C:\Users\felipe.glbezerra\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.Clientes.resources
+C:\Users\felipe.glbezerra\source\repos\ProjetoIntegrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.MDIrh.resources
