@@ -97,24 +97,24 @@ namespace ProjetoIntegrador
             {
                 string sql = "insert into Usuario  " +
         "(" +
-    
-     "Status_Usuario,"+
-     "nome_Usuario,"+
-     "CPF_Usuario,"+
-     "Login_Usuario,"+
-     "Senha_Usuario,"+
-     "id_departamento_Usuario,"+
-     "cep_Usuario,"+
-     "logradouro_Usuario,"+
-     "Numero_Usuario,"+
-     "bairro_Usuario,"+
-     "cidade_Usuario,"+
-     "uf_Usuario,"+
-"Compemento_Usuario,"+
-"telefone1_Usuario,"+
-"telefone2_Usuario,"+
-"email_Usuario,"+
-"Obs_Usuario,"+
+
+     "Status_Usuario," +
+     "nome_Usuario," +
+     "CPF_Usuario," +
+     "Login_Usuario," +
+     "Senha_Usuario," +
+     "id_departamento_Usuario," +
+     "cep_Usuario," +
+     "logradouro_Usuario," +
+     "Numero_Usuario," +
+     "bairro_Usuario," +
+     "cidade_Usuario," +
+     "uf_Usuario," +
+"Compemento_Usuario," +
+"telefone1_Usuario," +
+"telefone2_Usuario," +
+"email_Usuario," +
+"Obs_Usuario," +
 
     ")" +
         "Values" +
@@ -152,11 +152,11 @@ namespace ProjetoIntegrador
                         MessageBox.Show("Cadastro realizado com sucesso", "Código Gerado:" + leitura[0].ToString());
                         txtCodigo.Text = leitura[0].ToString();
                         mtbDataC.Text = leitura[1].ToString();
-                        cboStatus.SelectedItem = leitura[2].ToString();                   
+                        cboStatus.SelectedItem = leitura[2].ToString();
                         txtNome.Text = leitura[3].ToString();
                         mtbCPF.Text = leitura[4].ToString();
                         txtLogin.Text = leitura[5].ToString();
-                        txtSenha.Text = leitura[6].ToString();                       
+                        txtSenha.Text = leitura[6].ToString();
                         cboIDdepart.Text = leitura[7].ToString();
                         mtbCEP.Text = leitura[8].ToString();
                         txtLogradouro.Text = leitura[9].ToString();
@@ -170,7 +170,7 @@ namespace ProjetoIntegrador
                         txtEmail.Text = leitura[16].ToString();
                         txtObs.Text = leitura[17].ToString();
 
-                btoPesquisar.PerformClick();
+                        btoPesquisa.PerformClick();
                     }
                 }
 
@@ -180,7 +180,7 @@ namespace ProjetoIntegrador
                 }
                 finally
                 {
-                    CarregarDataGrid();
+                    // CarregarDataGrid();
                     conn.Close();
                 }
             }
@@ -195,7 +195,7 @@ namespace ProjetoIntegrador
                 //txtCodigo.Text = dor._codigo;
             }
 
-            string sql = "select * from Produto where id_Produto =" + txtCodigo.Text;
+            string sql = "select * from Usuario where id_Usuario =" + txtCodigo.Text;
 
             SqlConnection conexao = new SqlConnection(stringConexao);
             SqlCommand cmd = new SqlCommand(sql, conexao);
@@ -228,7 +228,7 @@ namespace ProjetoIntegrador
                     txtEmail.Text = leitura[16].ToString();
                     txtObs.Text = leitura[17].ToString();
 
-                    CarregarDataGrid();
+
                 }
                 else
                 {
@@ -245,6 +245,30 @@ namespace ProjetoIntegrador
                 conexao.Close();
             }
         }
+
+        private void btoLimpar_Click(object sender, EventArgs e)
+        {
+
+            txtCodigo.Text = "";
+            mtbDataC.Text = "";
+            cboStatus.SelectedItem = -1;
+            txtNome.Text = "";
+            mtbCPF.Text = "";
+            txtLogin.Text = "";
+            txtSenha.Text = "";
+            cboIDdepart.Text = "";
+            mtbCEP.Text = "";
+            txtLogradouro.Text = "";
+            txtNumero.Text = "";
+            txtBairro.Text = "";
+            txtCity.Text = "";
+            cboUF.SelectedItem = -1;
+            txtComple.Text = "";
+            mtbTel1.Text = "";
+            mtbTel2.Text = "";
+            txtEmail.Text = "";
+            txtObs.Text = "";
         }
     }
+}
 
