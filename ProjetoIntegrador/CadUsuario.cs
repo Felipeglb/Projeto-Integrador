@@ -29,9 +29,51 @@ namespace ProjetoIntegrador
 
         private void CadUsuario_Load(object sender, EventArgs e)
         {
-
+            TestarConexao();
+            ComboBox();
         }
-        private bool Validar()
+
+
+
+        private void ComboBox()
+        {
+            string sql = "select id_departamento, nome_departamento from Departamento";
+            SqlConnection con = new SqlConnection(stringConexao);
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader reader;
+
+            DataTable tabela = new DataTable();
+            con.Open();
+
+            try
+            {
+                reader = cmd.ExecuteReader();
+                tabela.Load(reader);
+
+                cboDepart.DisplayMember = "nome_departamento";
+                cboDepart.DataSource = tabela;
+
+
+                cboIDdepart.DisplayMember = "id_departamento";
+                cboIDdepart.DataSource = tabela;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro - " + ex.ToString());
+                Application.Exit();
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+
+
+
+            private bool Validar()
         {
             if (cboStatus.Text == "")
             {
@@ -208,7 +250,7 @@ namespace ProjetoIntegrador
                 leitura = cmd.ExecuteReader();
                 if (leitura.Read())
                 {
-                    txtCodigo.Text = leitura[0].ToString();
+                    
                     mtbDataC.Text = leitura[1].ToString();
                     cboStatus.SelectedItem = leitura[2].ToString();
                     txtNome.Text = leitura[3].ToString();
@@ -294,15 +336,14 @@ namespace ProjetoIntegrador
 
 "Where id_Usuario = " + txtCodigo.Text;
 
-            SqlConnection conn = new SqlConnection(stringConexao);
-            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlConnection conexao = new SqlConnection(stringConexao);
+            SqlCommand cmd = new SqlCommand(sql, conexao);
             cmd.CommandType = CommandType.Text;
-            SqlDataReader reader;
 
 
             try
             {
-                conn.Open();
+                conexao.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i == 1)
                 {
@@ -316,9 +357,17 @@ namespace ProjetoIntegrador
             }
             finally
             {
-                conn.Close();
+                conexao.Close();
             }
         }
+
+        private void btoSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+            //this.Close();
+        }
+
+
     }
 }
 

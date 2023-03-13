@@ -28,603 +28,634 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtCodigo = new TextBox();
-            label1 = new Label();
-            cboStatus = new ComboBox();
-            label3 = new Label();
-            btoPesquisa = new Button();
-            label4 = new Label();
-            mtbCPF = new MaskedTextBox();
-            txtNome = new TextBox();
-            label2 = new Label();
-            label5 = new Label();
-            txtLogin = new TextBox();
-            label7 = new Label();
-            cboIDdepart = new ComboBox();
-            label8 = new Label();
-            txtBairro = new TextBox();
-            label9 = new Label();
-            txtLogradouro = new TextBox();
-            label10 = new Label();
-            txtCity = new TextBox();
-            cboUF = new ComboBox();
-            label11 = new Label();
-            label14 = new Label();
-            mtbTel1 = new MaskedTextBox();
-            mtbTel2 = new MaskedTextBox();
-            label15 = new Label();
-            groupBox1 = new GroupBox();
-            label17 = new Label();
-            mtbDataC = new MaskedTextBox();
-            groupBox2 = new GroupBox();
-            cboDepart = new ComboBox();
-            label12 = new Label();
-            label20 = new Label();
-            txtSenha = new TextBox();
-            label19 = new Label();
-            txtEmail = new TextBox();
-            label18 = new Label();
-            txtComple = new TextBox();
-            label13 = new Label();
-            txtNumero = new TextBox();
-            label6 = new Label();
-            mtbCEP = new MaskedTextBox();
-            groupBox3 = new GroupBox();
-            label21 = new Label();
-            txtObs = new TextBox();
-            groupBox4 = new GroupBox();
-            btoExcluir = new Button();
-            btoLimpar = new Button();
-            btoCadastro = new Button();
-            btoAlterar = new Button();
-            groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
-            groupBox4.SuspendLayout();
-            SuspendLayout();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboStatus = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btoPesquisa = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.mtbCPF = new System.Windows.Forms.MaskedTextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtLogin = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cboIDdepart = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtLogradouro = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtCity = new System.Windows.Forms.TextBox();
+            this.cboUF = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.mtbTel1 = new System.Windows.Forms.MaskedTextBox();
+            this.mtbTel2 = new System.Windows.Forms.MaskedTextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.mtbDataC = new System.Windows.Forms.MaskedTextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cboDepart = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtComple = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.mtbCEP = new System.Windows.Forms.MaskedTextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtObs = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btoSair = new System.Windows.Forms.Button();
+            this.btoLimpar = new System.Windows.Forms.Button();
+            this.btoCadastro = new System.Windows.Forms.Button();
+            this.btoAlterar = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.SuspendLayout();
             // 
             // txtCodigo
             // 
-            txtCodigo.Location = new Point(5, 42);
-            txtCodigo.Margin = new Padding(4);
-            txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(113, 29);
-            txtCodigo.TabIndex = 0;
+            this.txtCodigo.Location = new System.Drawing.Point(5, 42);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(113, 29);
+            this.txtCodigo.TabIndex = 0;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(5, 17);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(25, 21);
-            label1.TabIndex = 1;
-            label1.Text = "ID";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(5, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(25, 21);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "ID";
             // 
             // cboStatus
             // 
-            cboStatus.FormattingEnabled = true;
-            cboStatus.Location = new Point(902, 49);
-            cboStatus.Margin = new Padding(4);
-            cboStatus.Name = "cboStatus";
-            cboStatus.Size = new Size(139, 29);
-            cboStatus.TabIndex = 5;
+            this.cboStatus.FormattingEnabled = true;
+            this.cboStatus.Items.AddRange(new object[] {
+            "Ativo",
+            "Demitido",
+            "Suspenso"});
+            this.cboStatus.Location = new System.Drawing.Point(902, 49);
+            this.cboStatus.Margin = new System.Windows.Forms.Padding(4);
+            this.cboStatus.Name = "cboStatus";
+            this.cboStatus.Size = new System.Drawing.Size(139, 29);
+            this.cboStatus.TabIndex = 5;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(902, 24);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(52, 21);
-            label3.TabIndex = 5;
-            label3.Text = "Status";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(902, 24);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 21);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Status";
             // 
             // btoPesquisa
             // 
-            btoPesquisa.Location = new Point(126, 39);
-            btoPesquisa.Margin = new Padding(4);
-            btoPesquisa.Name = "btoPesquisa";
-            btoPesquisa.Size = new Size(96, 32);
-            btoPesquisa.TabIndex = 1;
-            btoPesquisa.Text = "&Pesquisar";
-            btoPesquisa.UseVisualStyleBackColor = true;
-            btoPesquisa.Click += btoPesquisa_Click;
+            this.btoPesquisa.Location = new System.Drawing.Point(126, 39);
+            this.btoPesquisa.Margin = new System.Windows.Forms.Padding(4);
+            this.btoPesquisa.Name = "btoPesquisa";
+            this.btoPesquisa.Size = new System.Drawing.Size(96, 32);
+            this.btoPesquisa.TabIndex = 1;
+            this.btoPesquisa.Text = "&Pesquisar";
+            this.btoPesquisa.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(738, 24);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(37, 21);
-            label4.TabIndex = 8;
-            label4.Text = "CPF";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(738, 24);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(37, 21);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "CPF";
             // 
             // mtbCPF
             // 
-            mtbCPF.Location = new Point(738, 49);
-            mtbCPF.Margin = new Padding(4);
-            mtbCPF.Mask = "___.___.___-__";
-            mtbCPF.Name = "mtbCPF";
-            mtbCPF.Size = new Size(156, 29);
-            mtbCPF.TabIndex = 4;
+            this.mtbCPF.Location = new System.Drawing.Point(738, 49);
+            this.mtbCPF.Margin = new System.Windows.Forms.Padding(4);
+            this.mtbCPF.Mask = "###.###.###-##";
+            this.mtbCPF.Name = "mtbCPF";
+            this.mtbCPF.Size = new System.Drawing.Size(156, 29);
+            this.mtbCPF.TabIndex = 4;
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(8, 49);
-            txtNome.Margin = new Padding(4);
-            txtNome.Name = "txtNome";
-            txtNome.Size = new Size(355, 29);
-            txtNome.TabIndex = 3;
+            this.txtNome.Location = new System.Drawing.Point(8, 49);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(355, 29);
+            this.txtNome.TabIndex = 3;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(8, 18);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(53, 21);
-            label2.TabIndex = 3;
-            label2.Text = "Nome";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(8, 18);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 21);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Nome";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(230, 207);
-            label5.Margin = new Padding(4, 0, 4, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(49, 21);
-            label5.TabIndex = 11;
-            label5.Text = "Login";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(230, 207);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 21);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Login";
             // 
             // txtLogin
             // 
-            txtLogin.Location = new Point(230, 231);
-            txtLogin.Margin = new Padding(4);
-            txtLogin.Name = "txtLogin";
-            txtLogin.PasswordChar = '*';
-            txtLogin.Size = new Size(187, 29);
-            txtLogin.TabIndex = 19;
+            this.txtLogin.Location = new System.Drawing.Point(230, 231);
+            this.txtLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.PasswordChar = '*';
+            this.txtLogin.Size = new System.Drawing.Size(187, 29);
+            this.txtLogin.TabIndex = 19;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(8, 207);
-            label7.Margin = new Padding(4, 0, 4, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(79, 21);
-            label7.TabIndex = 14;
-            label7.Text = "ID Depart.";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(8, 207);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(79, 21);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "ID Depart.";
             // 
             // cboIDdepart
             // 
-            cboIDdepart.FormattingEnabled = true;
-            cboIDdepart.Location = new Point(8, 232);
-            cboIDdepart.Margin = new Padding(4);
-            cboIDdepart.Name = "cboIDdepart";
-            cboIDdepart.Size = new Size(76, 29);
-            cboIDdepart.TabIndex = 18;
+            this.cboIDdepart.FormattingEnabled = true;
+            this.cboIDdepart.Location = new System.Drawing.Point(8, 232);
+            this.cboIDdepart.Margin = new System.Windows.Forms.Padding(4);
+            this.cboIDdepart.Name = "cboIDdepart";
+            this.cboIDdepart.Size = new System.Drawing.Size(76, 29);
+            this.cboIDdepart.TabIndex = 18;
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(708, 91);
-            label8.Margin = new Padding(4, 0, 4, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(52, 21);
-            label8.TabIndex = 19;
-            label8.Text = "Bairro";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(708, 91);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 21);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Bairro";
             // 
             // txtBairro
             // 
-            txtBairro.Location = new Point(708, 116);
-            txtBairro.Margin = new Padding(4);
-            txtBairro.Name = "txtBairro";
-            txtBairro.Size = new Size(186, 29);
-            txtBairro.TabIndex = 9;
+            this.txtBairro.Location = new System.Drawing.Point(708, 116);
+            this.txtBairro.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(186, 29);
+            this.txtBairro.TabIndex = 9;
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(8, 85);
-            label9.Margin = new Padding(4, 0, 4, 0);
-            label9.Name = "label9";
-            label9.Size = new Size(92, 21);
-            label9.TabIndex = 17;
-            label9.Text = "Logradouro";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(8, 85);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(92, 21);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Logradouro";
             // 
             // txtLogradouro
             // 
-            txtLogradouro.Location = new Point(8, 116);
-            txtLogradouro.Margin = new Padding(4);
-            txtLogradouro.Name = "txtLogradouro";
-            txtLogradouro.Size = new Size(355, 29);
-            txtLogradouro.TabIndex = 6;
+            this.txtLogradouro.Location = new System.Drawing.Point(8, 116);
+            this.txtLogradouro.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLogradouro.Name = "txtLogradouro";
+            this.txtLogradouro.Size = new System.Drawing.Size(355, 29);
+            this.txtLogradouro.TabIndex = 6;
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(8, 149);
-            label10.Margin = new Padding(4, 0, 4, 0);
-            label10.Name = "label10";
-            label10.Size = new Size(58, 21);
-            label10.TabIndex = 21;
-            label10.Text = "Cidade";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(8, 149);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(58, 21);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Cidade";
             // 
             // txtCity
             // 
-            txtCity.Location = new Point(8, 174);
-            txtCity.Margin = new Padding(4);
-            txtCity.Name = "txtCity";
-            txtCity.Size = new Size(260, 29);
-            txtCity.TabIndex = 11;
+            this.txtCity.Location = new System.Drawing.Point(8, 174);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(260, 29);
+            this.txtCity.TabIndex = 11;
             // 
             // cboUF
             // 
-            cboUF.FormattingEnabled = true;
-            cboUF.Location = new Point(276, 174);
-            cboUF.Margin = new Padding(4);
-            cboUF.Name = "cboUF";
-            cboUF.Size = new Size(87, 29);
-            cboUF.TabIndex = 12;
+            this.cboUF.FormattingEnabled = true;
+            this.cboUF.Items.AddRange(new object[] {
+            "AC",
+            "AL",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC",
+            "SP",
+            "SE",
+            "TO"});
+            this.cboUF.Location = new System.Drawing.Point(276, 174);
+            this.cboUF.Margin = new System.Windows.Forms.Padding(4);
+            this.cboUF.Name = "cboUF";
+            this.cboUF.Size = new System.Drawing.Size(87, 29);
+            this.cboUF.TabIndex = 12;
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(276, 150);
-            label11.Margin = new Padding(4, 0, 4, 0);
-            label11.Name = "label11";
-            label11.Size = new Size(26, 19);
-            label11.TabIndex = 23;
-            label11.Text = "UF";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(276, 150);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(26, 19);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "UF";
             // 
             // label14
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label14.Location = new Point(371, 148);
-            label14.Margin = new Padding(4, 0, 4, 0);
-            label14.Name = "label14";
-            label14.Size = new Size(76, 21);
-            label14.TabIndex = 28;
-            label14.Text = "Telefone1";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(371, 148);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(76, 21);
+            this.label14.TabIndex = 28;
+            this.label14.Text = "Telefone1";
             // 
             // mtbTel1
             // 
-            mtbTel1.Location = new Point(371, 173);
-            mtbTel1.Margin = new Padding(4);
-            mtbTel1.Mask = "(__)_____-____";
-            mtbTel1.Name = "mtbTel1";
-            mtbTel1.Size = new Size(166, 29);
-            mtbTel1.TabIndex = 13;
+            this.mtbTel1.Location = new System.Drawing.Point(371, 173);
+            this.mtbTel1.Margin = new System.Windows.Forms.Padding(4);
+            this.mtbTel1.Mask = "(##)#####-####";
+            this.mtbTel1.Name = "mtbTel1";
+            this.mtbTel1.Size = new System.Drawing.Size(166, 29);
+            this.mtbTel1.TabIndex = 13;
             // 
             // mtbTel2
             // 
-            mtbTel2.Location = new Point(545, 174);
-            mtbTel2.Margin = new Padding(4);
-            mtbTel2.Mask = "(__)_____-____";
-            mtbTel2.Name = "mtbTel2";
-            mtbTel2.Size = new Size(156, 29);
-            mtbTel2.TabIndex = 14;
+            this.mtbTel2.Location = new System.Drawing.Point(545, 174);
+            this.mtbTel2.Margin = new System.Windows.Forms.Padding(4);
+            this.mtbTel2.Mask = "(##)#####-####";
+            this.mtbTel2.Name = "mtbTel2";
+            this.mtbTel2.Size = new System.Drawing.Size(156, 29);
+            this.mtbTel2.TabIndex = 14;
             // 
             // label15
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label15.Location = new Point(543, 148);
-            label15.Margin = new Padding(4, 0, 4, 0);
-            label15.Name = "label15";
-            label15.Size = new Size(76, 21);
-            label15.TabIndex = 30;
-            label15.Text = "Telefone2";
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(543, 148);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(76, 21);
+            this.label15.TabIndex = 30;
+            this.label15.Text = "Telefone2";
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(label17);
-            groupBox1.Controls.Add(mtbDataC);
-            groupBox1.Controls.Add(txtCodigo);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(btoPesquisa);
-            groupBox1.Location = new Point(15, 10);
-            groupBox1.Margin = new Padding(4);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4);
-            groupBox1.Size = new Size(1051, 85);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
+            this.groupBox1.Controls.Add(this.label17);
+            this.groupBox1.Controls.Add(this.mtbDataC);
+            this.groupBox1.Controls.Add(this.txtCodigo);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.btoPesquisa);
+            this.groupBox1.Location = new System.Drawing.Point(15, 10);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1051, 85);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
             // 
             // label17
             // 
-            label17.AutoSize = true;
-            label17.Location = new Point(902, 17);
-            label17.Name = "label17";
-            label17.Size = new Size(129, 21);
-            label17.TabIndex = 8;
-            label17.Text = "Data de Cadastro";
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(902, 17);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(129, 21);
+            this.label17.TabIndex = 8;
+            this.label17.Text = "Data de Cadastro";
             // 
             // mtbDataC
             // 
-            mtbDataC.Enabled = false;
-            mtbDataC.Location = new Point(902, 45);
-            mtbDataC.Mask = "00/00/0000 90:00";
-            mtbDataC.Name = "mtbDataC";
-            mtbDataC.Size = new Size(139, 29);
-            mtbDataC.TabIndex = 7;
-            mtbDataC.ValidatingType = typeof(DateTime);
+            this.mtbDataC.Enabled = false;
+            this.mtbDataC.Location = new System.Drawing.Point(902, 45);
+            this.mtbDataC.Mask = "##/##/#### ##:##";
+            this.mtbDataC.Name = "mtbDataC";
+            this.mtbDataC.Size = new System.Drawing.Size(139, 29);
+            this.mtbDataC.TabIndex = 7;
+            this.mtbDataC.ValidatingType = typeof(System.DateTime);
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(cboDepart);
-            groupBox2.Controls.Add(label12);
-            groupBox2.Controls.Add(label7);
-            groupBox2.Controls.Add(cboIDdepart);
-            groupBox2.Controls.Add(label20);
-            groupBox2.Controls.Add(txtSenha);
-            groupBox2.Controls.Add(label19);
-            groupBox2.Controls.Add(txtEmail);
-            groupBox2.Controls.Add(label18);
-            groupBox2.Controls.Add(txtComple);
-            groupBox2.Controls.Add(label5);
-            groupBox2.Controls.Add(txtLogin);
-            groupBox2.Controls.Add(label13);
-            groupBox2.Controls.Add(txtNumero);
-            groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(mtbCEP);
-            groupBox2.Controls.Add(label3);
-            groupBox2.Controls.Add(cboStatus);
-            groupBox2.Controls.Add(txtNome);
-            groupBox2.Controls.Add(label2);
-            groupBox2.Controls.Add(label11);
-            groupBox2.Controls.Add(cboUF);
-            groupBox2.Controls.Add(label10);
-            groupBox2.Controls.Add(label4);
-            groupBox2.Controls.Add(txtCity);
-            groupBox2.Controls.Add(mtbCPF);
-            groupBox2.Controls.Add(mtbTel2);
-            groupBox2.Controls.Add(label15);
-            groupBox2.Controls.Add(mtbTel1);
-            groupBox2.Controls.Add(label14);
-            groupBox2.Controls.Add(txtLogradouro);
-            groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(txtBairro);
-            groupBox2.Controls.Add(label8);
-            groupBox2.Location = new Point(15, 104);
-            groupBox2.Margin = new Padding(4);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(4);
-            groupBox2.Size = new Size(1051, 276);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
+            this.groupBox2.Controls.Add(this.cboDepart);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.cboIDdepart);
+            this.groupBox2.Controls.Add(this.label20);
+            this.groupBox2.Controls.Add(this.txtSenha);
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.txtEmail);
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.txtComple);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.txtLogin);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.txtNumero);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.mtbCEP);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.cboStatus);
+            this.groupBox2.Controls.Add(this.txtNome);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.cboUF);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.txtCity);
+            this.groupBox2.Controls.Add(this.mtbCPF);
+            this.groupBox2.Controls.Add(this.mtbTel2);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.mtbTel1);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.txtLogradouro);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.txtBairro);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Location = new System.Drawing.Point(15, 104);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(1051, 276);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
             // 
             // cboDepart
             // 
-            cboDepart.FormattingEnabled = true;
-            cboDepart.Location = new Point(91, 231);
-            cboDepart.Name = "cboDepart";
-            cboDepart.Size = new Size(132, 29);
-            cboDepart.TabIndex = 45;
+            this.cboDepart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.cboDepart.FormattingEnabled = true;
+            this.cboDepart.Location = new System.Drawing.Point(91, 231);
+            this.cboDepart.Name = "cboDepart";
+            this.cboDepart.Size = new System.Drawing.Size(132, 29);
+            this.cboDepart.TabIndex = 45;
             // 
             // label12
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.Location = new Point(95, 207);
-            label12.Margin = new Padding(4, 0, 4, 0);
-            label12.Name = "label12";
-            label12.Size = new Size(110, 21);
-            label12.TabIndex = 25;
-            label12.Text = "Departamento";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(95, 207);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(110, 21);
+            this.label12.TabIndex = 25;
+            this.label12.Text = "Departamento";
             // 
             // label20
             // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label20.Location = new Point(425, 207);
-            label20.Margin = new Padding(4, 0, 4, 0);
-            label20.Name = "label20";
-            label20.Size = new Size(53, 21);
-            label20.TabIndex = 44;
-            label20.Text = "Senha";
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label20.Location = new System.Drawing.Point(425, 207);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(53, 21);
+            this.label20.TabIndex = 44;
+            this.label20.Text = "Senha";
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(425, 231);
-            txtSenha.Margin = new Padding(4);
-            txtSenha.Name = "txtSenha";
-            txtSenha.PasswordChar = '*';
-            txtSenha.Size = new Size(217, 29);
-            txtSenha.TabIndex = 20;
+            this.txtSenha.Location = new System.Drawing.Point(425, 231);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(217, 29);
+            this.txtSenha.TabIndex = 20;
             // 
             // label19
             // 
-            label19.AutoSize = true;
-            label19.Location = new Point(708, 147);
-            label19.Name = "label19";
-            label19.Size = new Size(54, 21);
-            label19.TabIndex = 42;
-            label19.Text = "E-mail";
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(708, 147);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(54, 21);
+            this.label19.TabIndex = 42;
+            this.label19.Text = "E-mail";
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(708, 173);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(333, 29);
-            txtEmail.TabIndex = 15;
+            this.txtEmail.Location = new System.Drawing.Point(708, 173);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(333, 29);
+            this.txtEmail.TabIndex = 15;
             // 
             // label18
             // 
-            label18.AutoSize = true;
-            label18.Location = new Point(463, 92);
-            label18.Name = "label18";
-            label18.Size = new Size(109, 21);
-            label18.TabIndex = 40;
-            label18.Text = "Complemento";
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(463, 92);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(109, 21);
+            this.label18.TabIndex = 40;
+            this.label18.Text = "Complemento";
             // 
             // txtComple
             // 
-            txtComple.Location = new Point(463, 116);
-            txtComple.Name = "txtComple";
-            txtComple.Size = new Size(238, 29);
-            txtComple.TabIndex = 8;
+            this.txtComple.Location = new System.Drawing.Point(463, 116);
+            this.txtComple.Name = "txtComple";
+            this.txtComple.Size = new System.Drawing.Size(238, 29);
+            this.txtComple.TabIndex = 8;
             // 
             // label13
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(371, 92);
-            label13.Margin = new Padding(4, 0, 4, 0);
-            label13.Name = "label13";
-            label13.Size = new Size(29, 21);
-            label13.TabIndex = 37;
-            label13.Text = "Nº";
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(371, 92);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(29, 21);
+            this.label13.TabIndex = 37;
+            this.label13.Text = "Nº";
             // 
             // txtNumero
             // 
-            txtNumero.Location = new Point(371, 116);
-            txtNumero.Margin = new Padding(4);
-            txtNumero.Name = "txtNumero";
-            txtNumero.Size = new Size(85, 29);
-            txtNumero.TabIndex = 7;
+            this.txtNumero.Location = new System.Drawing.Point(371, 116);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(85, 29);
+            this.txtNumero.TabIndex = 7;
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(902, 92);
-            label6.Margin = new Padding(4, 0, 4, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(37, 21);
-            label6.TabIndex = 35;
-            label6.Text = "CEP";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(902, 92);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(37, 21);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "CEP";
             // 
             // mtbCEP
             // 
-            mtbCEP.Location = new Point(902, 116);
-            mtbCEP.Margin = new Padding(4);
-            mtbCEP.Mask = "_____-___";
-            mtbCEP.Name = "mtbCEP";
-            mtbCEP.Size = new Size(139, 29);
-            mtbCEP.TabIndex = 10;
+            this.mtbCEP.Location = new System.Drawing.Point(902, 116);
+            this.mtbCEP.Margin = new System.Windows.Forms.Padding(4);
+            this.mtbCEP.Mask = "#####-###";
+            this.mtbCEP.Name = "mtbCEP";
+            this.mtbCEP.Size = new System.Drawing.Size(139, 29);
+            this.mtbCEP.TabIndex = 10;
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(label21);
-            groupBox3.Controls.Add(txtObs);
-            groupBox3.Location = new Point(15, 388);
-            groupBox3.Margin = new Padding(4);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new Padding(4);
-            groupBox3.Size = new Size(1051, 141);
-            groupBox3.TabIndex = 2;
-            groupBox3.TabStop = false;
+            this.groupBox3.Controls.Add(this.label21);
+            this.groupBox3.Controls.Add(this.txtObs);
+            this.groupBox3.Location = new System.Drawing.Point(15, 388);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(1051, 141);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
             // 
             // label21
             // 
-            label21.AutoSize = true;
-            label21.Location = new Point(8, 19);
-            label21.Name = "label21";
-            label21.Size = new Size(92, 21);
-            label21.TabIndex = 1;
-            label21.Text = "Observação";
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(8, 19);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(92, 21);
+            this.label21.TabIndex = 1;
+            this.label21.Text = "Observação";
             // 
             // txtObs
             // 
-            txtObs.Location = new Point(8, 43);
-            txtObs.Multiline = true;
-            txtObs.Name = "txtObs";
-            txtObs.Size = new Size(1033, 85);
-            txtObs.TabIndex = 21;
+            this.txtObs.Location = new System.Drawing.Point(8, 43);
+            this.txtObs.Multiline = true;
+            this.txtObs.Name = "txtObs";
+            this.txtObs.Size = new System.Drawing.Size(1033, 85);
+            this.txtObs.TabIndex = 21;
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(btoExcluir);
-            groupBox4.Controls.Add(btoLimpar);
-            groupBox4.Controls.Add(btoCadastro);
-            groupBox4.Controls.Add(btoAlterar);
-            groupBox4.Location = new Point(15, 537);
-            groupBox4.Margin = new Padding(4);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Padding = new Padding(4);
-            groupBox4.Size = new Size(1051, 70);
-            groupBox4.TabIndex = 37;
-            groupBox4.TabStop = false;
+            this.groupBox4.Controls.Add(this.btoSair);
+            this.groupBox4.Controls.Add(this.btoLimpar);
+            this.groupBox4.Controls.Add(this.btoCadastro);
+            this.groupBox4.Controls.Add(this.btoAlterar);
+            this.groupBox4.Location = new System.Drawing.Point(15, 537);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Size = new System.Drawing.Size(1051, 70);
+            this.groupBox4.TabIndex = 37;
+            this.groupBox4.TabStop = false;
             // 
-            // btoExcluir
+            // btoSair
             // 
-            btoExcluir.Location = new Point(947, 17);
-            btoExcluir.Margin = new Padding(4);
-            btoExcluir.Name = "btoExcluir";
-            btoExcluir.Size = new Size(94, 40);
-            btoExcluir.TabIndex = 25;
-            btoExcluir.Text = "&Excluir";
-            btoExcluir.UseVisualStyleBackColor = true;
+            this.btoSair.Location = new System.Drawing.Point(947, 17);
+            this.btoSair.Margin = new System.Windows.Forms.Padding(4);
+            this.btoSair.Name = "btoSair";
+            this.btoSair.Size = new System.Drawing.Size(94, 40);
+            this.btoSair.TabIndex = 25;
+            this.btoSair.Text = "&Sair";
+            this.btoSair.UseVisualStyleBackColor = true;
+            this.btoSair.Click += new System.EventHandler(this.btoSair_Click);
             // 
             // btoLimpar
             // 
-            btoLimpar.Location = new Point(845, 17);
-            btoLimpar.Margin = new Padding(4);
-            btoLimpar.Name = "btoLimpar";
-            btoLimpar.Size = new Size(94, 40);
-            btoLimpar.TabIndex = 24;
-            btoLimpar.Text = "&Limpar";
-            btoLimpar.UseVisualStyleBackColor = true;
-            btoLimpar.Click += btoLimpar_Click;
+            this.btoLimpar.Location = new System.Drawing.Point(845, 17);
+            this.btoLimpar.Margin = new System.Windows.Forms.Padding(4);
+            this.btoLimpar.Name = "btoLimpar";
+            this.btoLimpar.Size = new System.Drawing.Size(94, 40);
+            this.btoLimpar.TabIndex = 24;
+            this.btoLimpar.Text = "&Limpar";
+            this.btoLimpar.UseVisualStyleBackColor = true;
             // 
             // btoCadastro
             // 
-            btoCadastro.Location = new Point(641, 17);
-            btoCadastro.Margin = new Padding(4);
-            btoCadastro.Name = "btoCadastro";
-            btoCadastro.Size = new Size(94, 40);
-            btoCadastro.TabIndex = 22;
-            btoCadastro.Text = "&Cadastro";
-            btoCadastro.UseVisualStyleBackColor = true;
-            btoCadastro.Click += btoCadastro_Click;
+            this.btoCadastro.Location = new System.Drawing.Point(641, 17);
+            this.btoCadastro.Margin = new System.Windows.Forms.Padding(4);
+            this.btoCadastro.Name = "btoCadastro";
+            this.btoCadastro.Size = new System.Drawing.Size(94, 40);
+            this.btoCadastro.TabIndex = 22;
+            this.btoCadastro.Text = "&Cadastro";
+            this.btoCadastro.UseVisualStyleBackColor = true;
             // 
             // btoAlterar
             // 
-            btoAlterar.Location = new Point(743, 17);
-            btoAlterar.Margin = new Padding(4);
-            btoAlterar.Name = "btoAlterar";
-            btoAlterar.Size = new Size(94, 40);
-            btoAlterar.TabIndex = 23;
-            btoAlterar.Text = "&Alterar";
-            btoAlterar.UseVisualStyleBackColor = true;
-            btoAlterar.Click += btoAlterar_Click;
+            this.btoAlterar.Location = new System.Drawing.Point(743, 17);
+            this.btoAlterar.Margin = new System.Windows.Forms.Padding(4);
+            this.btoAlterar.Name = "btoAlterar";
+            this.btoAlterar.Size = new System.Drawing.Size(94, 40);
+            this.btoAlterar.TabIndex = 23;
+            this.btoAlterar.Text = "&Alterar";
+            this.btoAlterar.UseVisualStyleBackColor = true;
             // 
             // CadUsuario
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1069, 616);
-            Controls.Add(groupBox4);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(4);
-            Name = "CadUsuario";
-            RightToLeft = RightToLeft.No;
-            Text = "CadastroUsuário";
-            Load += CadUsuario_Load;
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
-            groupBox4.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1069, 616);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "CadUsuario";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Text = "CadastroUsuário";
+            this.Load += new System.EventHandler(this.CadUsuario_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -661,7 +692,7 @@
         private MaskedTextBox mtbCEP;
         private GroupBox groupBox4;
         private Button btoAlterar;
-        private Button btoExcluir;
+        private Button btoSair;
         private Button btoLimpar;
         private Button btoCadastro;
         private Label label13;
