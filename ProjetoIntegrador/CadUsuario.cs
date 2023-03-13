@@ -269,6 +269,56 @@ namespace ProjetoIntegrador
             txtEmail.Text = "";
             txtObs.Text = "";
         }
+
+        private void btoAlterar_Click(object sender, EventArgs e)
+        {
+            string sql = "update Usuario set " +
+
+     "Status_Usuario= '" + cboStatus.Text + "'," +
+     "nome_Usuario'" + txtNome.Text + "'," +
+     "CPF_Usuario= '" + mtbCPF.Text + "'," +
+     "Login_Usuario= '" + txtLogin.Text + "',"+
+     "Senha_Usuario= '" + txtSenha.Text + "'," +
+     "id_departamento_Usuario= '" + cboIDdepart.Text + "',"+
+     "cep_Usuario= '" + mtbCEP.Text + "'," +
+     "logradouro_Usuario," + txtLogradouro.Text + "'," +
+     "Numero_Usuario," + txtNumero.Text + "'," +
+     "bairro_Usuario," + txtBairro.Text + "'," +
+     "cidade_Usuario," + txtCity.Text + "'," + 
+     "uf_Usuario," + cboUF.Text + "'," +
+"Compemento_Usuario," + txtComple.Text + "',"+
+"telefone1_Usuario," + mtbTel1.Text + "',"+
+"telefone2_Usuario," + mtbTel2.Text + "',"+
+"email_Usuario," + txtEmail.Text + "'," +
+"Obs_Usuario," + txtObs.Text + "',"+
+
+"Where id_Usuario = " + txtCodigo.Text;
+
+            SqlConnection conn = new SqlConnection(stringConexao);
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader reader;
+
+
+            try
+            {
+                conn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i == 1)
+                {
+                    MessageBox.Show("Dados Alterados com sucesso");
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }
 

@@ -600,6 +600,7 @@
             btoAlterar.TabIndex = 23;
             btoAlterar.Text = "&Alterar";
             btoAlterar.UseVisualStyleBackColor = true;
+            btoAlterar.Click += btoAlterar_Click;
             // 
             // CadUsuario
             // 
