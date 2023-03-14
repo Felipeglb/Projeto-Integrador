@@ -18,7 +18,13 @@ namespace ProjetoIntegrador
 
         }
 
+        private void usuáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+            frmCadUsuario frm = new frmCadUsuario();
+            frm.MdiParent = this;
+            frm.Show();
 
-
+        }
     }
 }

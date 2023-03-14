@@ -2,7 +2,7 @@ using System.Data;
 using System.Data.SqlClient;
 namespace ProjetoIntegrador
 {
-    public partial class CadUsuario : Form
+    public partial class frmCadUsuario : Form
     {
         //string stringConexao = frmLogin.stringConexao;
 
@@ -22,7 +22,7 @@ namespace ProjetoIntegrador
                 Application.Exit();
             }
         }
-        public CadUsuario()
+        public frmCadUsuario()
         {
             InitializeComponent();
         }
@@ -91,7 +91,7 @@ namespace ProjetoIntegrador
                 return false;
             }
 
-            if (mtbCPF.Text == "")
+            if (mtbCPF.MaskFull == false)
             {
                 MessageBox.Show("Erro, o CPF deve ser informado");
                 mtbCPF.Text = "";
@@ -115,7 +115,7 @@ namespace ProjetoIntegrador
                 return false;
             }
 
-            if (mtbCEP.Text == "")
+            if (mtbCEP.MaskFull == false)
             {
                 MessageBox.Show("Erro, informe o CEP ");
                 mtbCEP.Text = "";
@@ -123,17 +123,34 @@ namespace ProjetoIntegrador
                 return false;
             }
 
-            if (mtbCEP.Text == "")
+            if (txtLogradouro.Text == "")
             {
-                MessageBox.Show("Erro, informe o CEP ");
-                mtbCEP.Text = "";
-                mtbCEP.Focus();
+                MessageBox.Show("Erro, um Login deve ser criado");
+                txtLogradouro.Text = "";
+                txtLogradouro.Focus();
                 return false;
             }
+
+
+
+
+
             return true;
         }
 
-        private void btoCadastro_Click(object sender, EventArgs e)
+
+
+
+
+
+
+        private void btoSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+            //this.Close();
+        }
+
+        private void btoCadastro_Click_1(object sender, EventArgs e)
         {
             if (Validar())
             {
@@ -152,11 +169,11 @@ namespace ProjetoIntegrador
      "bairro_Usuario," +
      "cidade_Usuario," +
      "uf_Usuario," +
-"Compemento_Usuario," +
+"Complemento_Usuario," +
 "telefone1_Usuario," +
 "telefone2_Usuario," +
 "email_Usuario," +
-"Obs_Usuario," +
+"Obs_Usuario" +
 
     ")" +
         "Values" +
@@ -164,22 +181,22 @@ namespace ProjetoIntegrador
         "'" + cboStatus.SelectedItem + "'," +
         "'" + txtNome.Text + "'," +
         "'" + mtbCPF.Text + "'," +
-        "'" + txtLogin.Text + "'" +
-        "'" + txtSenha.Text + "'" +
-        "'" + cboIDdepart.Text + "'" +
-        "'" + mtbCEP.Text + "'" +
-        "'" + txtLogradouro.Text + "'" +
-        "'" + txtNumero.Text + "'" +
-        "'" + txtBairro.Text + "'" +
-        "'" + txtCity.Text + "'" +
-        "'" + cboUF.Text + "'" +
-        "'" + txtComple.Text + "'" +
-        "'" + mtbTel1.Text + "'" +
-        "'" + mtbTel2.Text + "'" +
-        "'" + txtEmail.Text + "'" +
+        "'" + txtLogin.Text + "'," +
+        "'" + txtSenha.Text + "'," +
+        "'" + cboIDdepart.Text + "'," +
+        "'" + mtbCEP.Text + "'," +
+        "'" + txtLogradouro.Text + "'," +
+        "'" + mtbNumero.Text + "'," +
+        "'" + txtBairro.Text + "'," +
+        "'" + txtCity.Text + "'," +
+        "'" + cboUF.Text + "'," +
+        "'" + txtComple.Text + "'," +
+        "'" + mtbTel1.Text + "'," +
+        "'" + mtbTel2.Text + "'," +
+        "'" + txtEmail.Text + "'," +
         "'" + txtObs.Text + "'" +
 
-        ") Select SCOPE_Identity()";
+        ")" + "Select SCOPE_Identity()";
                 SqlConnection conn = new SqlConnection(stringConexao);
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.CommandType = CommandType.Text;
@@ -202,7 +219,7 @@ namespace ProjetoIntegrador
                         cboIDdepart.Text = leitura[7].ToString();
                         mtbCEP.Text = leitura[8].ToString();
                         txtLogradouro.Text = leitura[9].ToString();
-                        txtNumero.Text = leitura[10].ToString();
+                        mtbNumero.Text = leitura[10].ToString();
                         txtBairro.Text = leitura[11].ToString();
                         txtCity.Text = leitura[11].ToString();
                         cboUF.Text = leitura[12].ToString();
@@ -228,111 +245,27 @@ namespace ProjetoIntegrador
             }
         }
 
-        private void btoPesquisa_Click(object sender, EventArgs e)
-        {
-            //if (txtCodigo.Text.Trim() == "")
-            {
-                //frmProdutoPesquisa dor = new frmProdutoPesquisa();
-                //dor.ShowDialog();
-                //txtCodigo.Text = dor._codigo;
-            }
-
-            string sql = "select * from Usuario where id_Usuario =" + txtCodigo.Text;
-
-            SqlConnection conexao = new SqlConnection(stringConexao);
-            SqlCommand cmd = new SqlCommand(sql, conexao);
-            cmd.CommandType = CommandType.Text;
-            SqlDataReader leitura;
-            conexao.Open();
-
-            try
-            {
-                leitura = cmd.ExecuteReader();
-                if (leitura.Read())
-                {
-                    
-                    mtbDataC.Text = leitura[1].ToString();
-                    cboStatus.SelectedItem = leitura[2].ToString();
-                    txtNome.Text = leitura[3].ToString();
-                    mtbCPF.Text = leitura[4].ToString();
-                    txtLogin.Text = leitura[5].ToString();
-                    txtSenha.Text = leitura[6].ToString();
-                    cboIDdepart.Text = leitura[7].ToString();
-                    mtbCEP.Text = leitura[8].ToString();
-                    txtLogradouro.Text = leitura[9].ToString();
-                    txtNumero.Text = leitura[10].ToString();
-                    txtBairro.Text = leitura[11].ToString();
-                    txtCity.Text = leitura[11].ToString();
-                    cboUF.Text = leitura[12].ToString();
-                    txtComple.Text = leitura[13].ToString();
-                    mtbTel1.Text = leitura[14].ToString();
-                    mtbTel2.Text = leitura[15].ToString();
-                    txtEmail.Text = leitura[16].ToString();
-                    txtObs.Text = leitura[17].ToString();
-
-
-                }
-                else
-                {
-                    MessageBox.Show("Código de Produto inexistente");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            finally
-            {
-
-                conexao.Close();
-            }
-        }
-
-        private void btoLimpar_Click(object sender, EventArgs e)
-        {
-
-            txtCodigo.Text = "";
-            mtbDataC.Text = "";
-            cboStatus.SelectedItem = -1;
-            txtNome.Text = "";
-            mtbCPF.Text = "";
-            txtLogin.Text = "";
-            txtSenha.Text = "";
-            cboIDdepart.Text = "";
-            mtbCEP.Text = "";
-            txtLogradouro.Text = "";
-            txtNumero.Text = "";
-            txtBairro.Text = "";
-            txtCity.Text = "";
-            cboUF.SelectedItem = -1;
-            txtComple.Text = "";
-            mtbTel1.Text = "";
-            mtbTel2.Text = "";
-            txtEmail.Text = "";
-            txtObs.Text = "";
-        }
-
         private void btoAlterar_Click(object sender, EventArgs e)
         {
             string sql = "update Usuario set " +
 
-     "Status_Usuario= '" + cboStatus.Text + "'," +
-     "nome_Usuario'" + txtNome.Text + "'," +
-     "CPF_Usuario= '" + mtbCPF.Text + "'," +
-     "Login_Usuario= '" + txtLogin.Text + "',"+
-     "Senha_Usuario= '" + txtSenha.Text + "'," +
-     "id_departamento_Usuario= '" + cboIDdepart.Text + "',"+
-     "cep_Usuario= '" + mtbCEP.Text + "'," +
-     "logradouro_Usuario," + txtLogradouro.Text + "'," +
-     "Numero_Usuario," + txtNumero.Text + "'," +
-     "bairro_Usuario," + txtBairro.Text + "'," +
-     "cidade_Usuario," + txtCity.Text + "'," + 
-     "uf_Usuario," + cboUF.Text + "'," +
-"Compemento_Usuario," + txtComple.Text + "',"+
-"telefone1_Usuario," + mtbTel1.Text + "',"+
-"telefone2_Usuario," + mtbTel2.Text + "',"+
+"Status_Usuario= '" + cboStatus.Text + "'," +
+"nome_Usuario'" + txtNome.Text + "'," +
+"CPF_Usuario= '" + mtbCPF.Text + "'," +
+"Login_Usuario= '" + txtLogin.Text + "'," +
+"Senha_Usuario= '" + txtSenha.Text + "'," +
+"id_departamento_Usuario= '" + cboIDdepart.Text + "'," +
+"cep_Usuario= '" + mtbCEP.Text + "'," +
+"logradouro_Usuario," + txtLogradouro.Text + "'," +
+"Numero_Usuario," + mtbNumero.Text + "'," +
+"bairro_Usuario," + txtBairro.Text + "'," +
+"cidade_Usuario," + txtCity.Text + "'," +
+"uf_Usuario," + cboUF.Text + "'," +
+"Compemento_Usuario," + txtComple.Text + "'," +
+"telefone1_Usuario," + mtbTel1.Text + "'," +
+"telefone2_Usuario," + mtbTel2.Text + "'," +
 "email_Usuario," + txtEmail.Text + "'," +
-"Obs_Usuario," + txtObs.Text + "',"+
+"Obs_Usuario," + txtObs.Text + "'," +
 
 "Where id_Usuario = " + txtCodigo.Text;
 
@@ -361,13 +294,96 @@ namespace ProjetoIntegrador
             }
         }
 
-        private void btoSair_Click(object sender, EventArgs e)
+        private void btoLimpar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-            //this.Close();
+            txtCodigo.Text = "";
+            mtbDataC.Text = "";
+            cboStatus.SelectedItem = -1;
+            txtNome.Text = "";
+            mtbCPF.Text = "";
+            txtLogin.Text = "";
+            txtSenha.Text = "";
+            cboIDdepart.Text = "";
+            mtbCEP.Text = "";
+            txtLogradouro.Text = "";
+            mtbNumero.Text = "";
+            txtBairro.Text = "";
+            txtCity.Text = "";
+            cboUF.SelectedItem = -1;
+            txtComple.Text = "";
+            mtbTel1.Text = "";
+            mtbTel2.Text = "";
+            txtEmail.Text = "";
+            txtObs.Text = "";
         }
 
+        private void btoPesquisa_Click(object sender, EventArgs e)
+        {
+            //if (txtCodigo.Text.Trim() == "")
+            {
+                //frmProdutoPesquisa dor = new frmProdutoPesquisa();
+                //dor.ShowDialog();
+                //txtCodigo.Text = dor._codigo;
+            }
 
+            string sql = "select * from Usuario where id_Usuario =" + txtCodigo.Text;
+
+            SqlConnection conexao = new SqlConnection(stringConexao);
+            SqlCommand cmd = new SqlCommand(sql, conexao);
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader leitura;
+            conexao.Open();
+
+            try
+            {
+                leitura = cmd.ExecuteReader();
+                if (leitura.Read())
+                {
+
+                    mtbDataC.Text = leitura[1].ToString();
+                    cboStatus.SelectedItem = leitura[2].ToString();
+                    txtNome.Text = leitura[3].ToString();
+                    mtbCPF.Text = leitura[4].ToString();
+                    txtLogin.Text = leitura[5].ToString();
+                    txtSenha.Text = leitura[6].ToString();
+                    cboIDdepart.Text = leitura[7].ToString();
+                    mtbCEP.Text = leitura[8].ToString();
+                    txtLogradouro.Text = leitura[9].ToString();
+                    mtbNumero.Text = leitura[10].ToString();
+                    txtBairro.Text = leitura[11].ToString();
+                    txtCity.Text = leitura[11].ToString();
+                    cboUF.Text = leitura[12].ToString();
+                    txtComple.Text = leitura[13].ToString();
+                    mtbTel1.Text = leitura[14].ToString();
+                    mtbTel2.Text = leitura[15].ToString();
+                    txtEmail.Text = leitura[16].ToString();
+                    txtObs.Text = leitura[17].ToString();
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Código de Produto inexistente");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+
+                conexao.Close();
+            }
+        }
+
+        private void mtbNumero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
 

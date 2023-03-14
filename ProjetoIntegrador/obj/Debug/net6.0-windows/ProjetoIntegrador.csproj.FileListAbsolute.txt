@@ -36,8 +36,6 @@ C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\bin\
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.AssemblyReference.cache
-C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.CadUsuario.resources
-C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.LoginRH.resources
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.MDIrh.resources
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.csproj.GenerateResource.cache
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.GeneratedMSBuildEditorConfig.editorconfig
@@ -51,3 +49,5 @@ C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.genruntimeconfig.cache
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ref\ProjetoIntegrador.dll
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.frmCriarDepartamento.resources
+C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.frmLogin.resources
+C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.frmCadUsuario.resources

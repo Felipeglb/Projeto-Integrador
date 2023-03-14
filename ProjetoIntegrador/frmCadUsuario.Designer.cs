@@ -1,6 +1,6 @@
 ﻿namespace ProjetoIntegrador
 {
-    partial class CadUsuario
+    partial class frmCadUsuario
     {
         /// <summary>
         ///  Required designer variable.
@@ -57,6 +57,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.mtbDataC = new System.Windows.Forms.MaskedTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.mtbNumero = new System.Windows.Forms.MaskedTextBox();
             this.cboDepart = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -66,7 +67,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.txtComple = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtNumero = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.mtbCEP = new System.Windows.Forms.MaskedTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -135,6 +135,7 @@
             this.btoPesquisa.TabIndex = 1;
             this.btoPesquisa.Text = "&Pesquisar";
             this.btoPesquisa.UseVisualStyleBackColor = true;
+            this.btoPesquisa.Click += new System.EventHandler(this.btoPesquisa_Click);
             // 
             // label4
             // 
@@ -191,7 +192,6 @@
             this.txtLogin.Location = new System.Drawing.Point(230, 231);
             this.txtLogin.Margin = new System.Windows.Forms.Padding(4);
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.PasswordChar = '*';
             this.txtLogin.Size = new System.Drawing.Size(187, 29);
             this.txtLogin.TabIndex = 19;
             // 
@@ -396,6 +396,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.mtbNumero);
             this.groupBox2.Controls.Add(this.cboDepart);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label7);
@@ -409,7 +410,6 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtLogin);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.txtNumero);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.mtbCEP);
             this.groupBox2.Controls.Add(this.label3);
@@ -437,6 +437,14 @@
             this.groupBox2.Size = new System.Drawing.Size(1051, 276);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
+            // 
+            // mtbNumero
+            // 
+            this.mtbNumero.Location = new System.Drawing.Point(370, 116);
+            this.mtbNumero.Name = "mtbNumero";
+            this.mtbNumero.Size = new System.Drawing.Size(87, 29);
+            this.mtbNumero.TabIndex = 7;
+            this.mtbNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mtbNumero_KeyPress);
             // 
             // cboDepart
             // 
@@ -519,14 +527,6 @@
             this.label13.Size = new System.Drawing.Size(29, 21);
             this.label13.TabIndex = 37;
             this.label13.Text = "Nº";
-            // 
-            // txtNumero
-            // 
-            this.txtNumero.Location = new System.Drawing.Point(371, 116);
-            this.txtNumero.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(85, 29);
-            this.txtNumero.TabIndex = 7;
             // 
             // label6
             // 
@@ -611,6 +611,7 @@
             this.btoLimpar.TabIndex = 24;
             this.btoLimpar.Text = "&Limpar";
             this.btoLimpar.UseVisualStyleBackColor = true;
+            this.btoLimpar.Click += new System.EventHandler(this.btoLimpar_Click);
             // 
             // btoCadastro
             // 
@@ -621,6 +622,7 @@
             this.btoCadastro.TabIndex = 22;
             this.btoCadastro.Text = "&Cadastro";
             this.btoCadastro.UseVisualStyleBackColor = true;
+            this.btoCadastro.Click += new System.EventHandler(this.btoCadastro_Click_1);
             // 
             // btoAlterar
             // 
@@ -631,8 +633,9 @@
             this.btoAlterar.TabIndex = 23;
             this.btoAlterar.Text = "&Alterar";
             this.btoAlterar.UseVisualStyleBackColor = true;
+            this.btoAlterar.Click += new System.EventHandler(this.btoAlterar_Click);
             // 
-            // CadUsuario
+            // frmCadUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -643,7 +646,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "CadUsuario";
+            this.Name = "frmCadUsuario";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "CadastroUsuário";
             this.Load += new System.EventHandler(this.CadUsuario_Load);
@@ -696,7 +699,6 @@
         private Button btoLimpar;
         private Button btoCadastro;
         private Label label13;
-        private TextBox txtNumero;
         private Label label12;
         private Label label17;
         private MaskedTextBox mtbDataC;
@@ -709,5 +711,6 @@
         private Label label21;
         private TextBox txtObs;
         private ComboBox cboDepart;
+        private MaskedTextBox mtbNumero;
     }
 }
