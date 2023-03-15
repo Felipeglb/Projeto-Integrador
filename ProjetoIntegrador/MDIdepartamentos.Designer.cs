@@ -1,6 +1,6 @@
 ﻿namespace ProjetoIntegrador
 {
-    partial class MDIrh
+    partial class MDIdepartamentos
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -30,10 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.rHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadUsuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.financeiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -41,13 +44,23 @@
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.usuáriosToolStripMenuItem});
+            this.rHToolStripMenuItem,
+            this.financeiroToolStripMenuItem,
+            this.vendasToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
             this.menuStrip.Size = new System.Drawing.Size(805, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
+            // 
+            // rHToolStripMenuItem
+            // 
+            this.rHToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadUsuáriosToolStripMenuItem});
+            this.rHToolStripMenuItem.Name = "rHToolStripMenuItem";
+            this.rHToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.rHToolStripMenuItem.Text = "RH";
             // 
             // statusStrip
             // 
@@ -66,12 +79,24 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // usuáriosToolStripMenuItem
+            // cadUsuáriosToolStripMenuItem
             // 
-            this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
-            this.usuáriosToolStripMenuItem.Text = "Usuários";
-            this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
+            this.cadUsuáriosToolStripMenuItem.Name = "cadUsuáriosToolStripMenuItem";
+            this.cadUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadUsuáriosToolStripMenuItem.Text = "Usuários";
+            this.cadUsuáriosToolStripMenuItem.Click += new System.EventHandler(this.cadUsuáriosToolStripMenuItem_Click);
+            // 
+            // financeiroToolStripMenuItem
+            // 
+            this.financeiroToolStripMenuItem.Name = "financeiroToolStripMenuItem";
+            this.financeiroToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.financeiroToolStripMenuItem.Text = "Financeiro";
+            // 
+            // vendasToolStripMenuItem
+            // 
+            this.vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
+            this.vendasToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.vendasToolStripMenuItem.Text = "Vendas";
             // 
             // MDIrh
             // 
@@ -101,7 +126,10 @@
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.ToolTip toolTip;
-        private ToolStripMenuItem usuáriosToolStripMenuItem;
+        private ToolStripMenuItem rHToolStripMenuItem;
+        private ToolStripMenuItem cadUsuáriosToolStripMenuItem;
+        private ToolStripMenuItem financeiroToolStripMenuItem;
+        private ToolStripMenuItem vendasToolStripMenuItem;
     }
 }
 

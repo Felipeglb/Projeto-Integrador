@@ -169,11 +169,11 @@ namespace ProjetoIntegrador
      "bairro_Usuario," +
      "cidade_Usuario," +
      "uf_Usuario," +
-"Complemento_Usuario," +
-"telefone1_Usuario," +
-"telefone2_Usuario," +
-"email_Usuario," +
-"Obs_Usuario" +
+     "Complemento_Usuario," +
+     "telefone1_Usuario," +
+     "telefone2_Usuario," +
+     "email_Usuario," +
+     "Obs_Usuario" +
 
     ")" +
         "Values" +
@@ -209,25 +209,25 @@ namespace ProjetoIntegrador
                     if (leitura.Read())
                     {
                         MessageBox.Show("Cadastro realizado com sucesso", "Código Gerado:" + leitura[0].ToString());
-                        txtCodigo.Text = leitura[0].ToString();
+                        
                         mtbDataC.Text = leitura[1].ToString();
-                        cboStatus.SelectedItem = leitura[2].ToString();
+                        cboStatus.Text = leitura[2].ToString();
                         txtNome.Text = leitura[3].ToString();
                         mtbCPF.Text = leitura[4].ToString();
                         txtLogin.Text = leitura[5].ToString();
                         txtSenha.Text = leitura[6].ToString();
-                        cboIDdepart.Text = leitura[7].ToString();
+                        cboIDdepart.SelectedItem = leitura[7].ToString();
                         mtbCEP.Text = leitura[8].ToString();
                         txtLogradouro.Text = leitura[9].ToString();
                         mtbNumero.Text = leitura[10].ToString();
                         txtBairro.Text = leitura[11].ToString();
-                        txtCity.Text = leitura[11].ToString();
-                        cboUF.Text = leitura[12].ToString();
-                        txtComple.Text = leitura[13].ToString();
-                        mtbTel1.Text = leitura[14].ToString();
-                        mtbTel2.Text = leitura[15].ToString();
-                        txtEmail.Text = leitura[16].ToString();
-                        txtObs.Text = leitura[17].ToString();
+                        txtCity.Text = leitura[12].ToString();
+                        cboUF.SelectedItem = leitura[13].ToString();
+                        txtComple.Text = leitura[14].ToString();
+                        mtbTel1.Text = leitura[15].ToString();
+                        mtbTel2.Text = leitura[16].ToString();
+                        txtEmail.Text = leitura[17].ToString();
+                        txtObs.Text = leitura[18].ToString();
 
                         btoPesquisa.PerformClick();
                     }
@@ -250,22 +250,22 @@ namespace ProjetoIntegrador
             string sql = "update Usuario set " +
 
 "Status_Usuario= '" + cboStatus.Text + "'," +
-"nome_Usuario'" + txtNome.Text + "'," +
+"nome_Usuario= '" + txtNome.Text + "'," +
 "CPF_Usuario= '" + mtbCPF.Text + "'," +
 "Login_Usuario= '" + txtLogin.Text + "'," +
 "Senha_Usuario= '" + txtSenha.Text + "'," +
 "id_departamento_Usuario= '" + cboIDdepart.Text + "'," +
 "cep_Usuario= '" + mtbCEP.Text + "'," +
-"logradouro_Usuario," + txtLogradouro.Text + "'," +
-"Numero_Usuario," + mtbNumero.Text + "'," +
-"bairro_Usuario," + txtBairro.Text + "'," +
-"cidade_Usuario," + txtCity.Text + "'," +
-"uf_Usuario," + cboUF.Text + "'," +
-"Compemento_Usuario," + txtComple.Text + "'," +
-"telefone1_Usuario," + mtbTel1.Text + "'," +
-"telefone2_Usuario," + mtbTel2.Text + "'," +
-"email_Usuario," + txtEmail.Text + "'," +
-"Obs_Usuario," + txtObs.Text + "'," +
+"logradouro_Usuario= '" + txtLogradouro.Text + "'," +
+"Numero_Usuario= '" + mtbNumero.Text + "'," +
+"bairro_Usuario= '" + txtBairro.Text + "'," +
+"cidade_Usuario= '" + txtCity.Text + "'," +
+"uf_Usuario= '" + cboUF.Text + "'," +
+"Complemento_Usuario= '" + txtComple.Text + "'," +
+"telefone1_Usuario= '" + mtbTel1.Text + "'," +
+"telefone2_Usuario= '" + mtbTel2.Text + "'," +
+"email_Usuario= '" + txtEmail.Text + "'," +
+"Obs_Usuario= '" + txtObs.Text + "'" +
 
 "Where id_Usuario = " + txtCodigo.Text;
 
@@ -298,18 +298,19 @@ namespace ProjetoIntegrador
         {
             txtCodigo.Text = "";
             mtbDataC.Text = "";
-            cboStatus.SelectedItem = -1;
+            cboStatus.SelectedIndex = -1;
             txtNome.Text = "";
             mtbCPF.Text = "";
             txtLogin.Text = "";
             txtSenha.Text = "";
             cboIDdepart.Text = "";
+            cboDepart.SelectedIndex = -1;
             mtbCEP.Text = "";
             txtLogradouro.Text = "";
             mtbNumero.Text = "";
             txtBairro.Text = "";
             txtCity.Text = "";
-            cboUF.SelectedItem = -1;
+            cboUF.SelectedIndex = -1;
             txtComple.Text = "";
             mtbTel1.Text = "";
             mtbTel2.Text = "";
@@ -341,7 +342,7 @@ namespace ProjetoIntegrador
                 {
 
                     mtbDataC.Text = leitura[1].ToString();
-                    cboStatus.SelectedItem = leitura[2].ToString();
+                    cboStatus.Text = leitura[2].ToString();
                     txtNome.Text = leitura[3].ToString();
                     mtbCPF.Text = leitura[4].ToString();
                     txtLogin.Text = leitura[5].ToString();
@@ -351,19 +352,19 @@ namespace ProjetoIntegrador
                     txtLogradouro.Text = leitura[9].ToString();
                     mtbNumero.Text = leitura[10].ToString();
                     txtBairro.Text = leitura[11].ToString();
-                    txtCity.Text = leitura[11].ToString();
-                    cboUF.Text = leitura[12].ToString();
-                    txtComple.Text = leitura[13].ToString();
-                    mtbTel1.Text = leitura[14].ToString();
-                    mtbTel2.Text = leitura[15].ToString();
-                    txtEmail.Text = leitura[16].ToString();
-                    txtObs.Text = leitura[17].ToString();
+                    txtCity.Text = leitura[12].ToString();
+                    cboUF.SelectedItem = leitura[13].ToString();
+                    txtComple.Text = leitura[14].ToString();
+                    mtbTel1.Text = leitura[15].ToString();
+                    mtbTel2.Text = leitura[16].ToString();
+                    txtEmail.Text = leitura[17].ToString();
+                    txtObs.Text = leitura[18].ToString();
 
 
                 }
                 else
                 {
-                    MessageBox.Show("Código de Produto inexistente");
+                    MessageBox.Show("Código de Usuário inexistente");
                 }
             }
             catch (Exception ex)

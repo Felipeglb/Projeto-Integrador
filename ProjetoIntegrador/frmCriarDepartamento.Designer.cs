@@ -261,6 +261,7 @@
             this.btoLimpar.TabIndex = 2;
             this.btoLimpar.Text = "&Limpar";
             this.btoLimpar.UseVisualStyleBackColor = true;
+            this.btoLimpar.Click += new System.EventHandler(this.btoLimpar_Click);
             // 
             // btoExcluir
             // 
@@ -270,6 +271,7 @@
             this.btoExcluir.TabIndex = 1;
             this.btoExcluir.Text = "&Excluir";
             this.btoExcluir.UseVisualStyleBackColor = true;
+            this.btoExcluir.Click += new System.EventHandler(this.btoExcluir_Click_1);
             // 
             // btoAlterar
             // 
@@ -279,6 +281,7 @@
             this.btoAlterar.TabIndex = 0;
             this.btoAlterar.Text = "&Alterar";
             this.btoAlterar.UseVisualStyleBackColor = true;
+            this.btoAlterar.Click += new System.EventHandler(this.btoAlterar_Click_1);
             // 
             // frmCriarDepartamento
             // 

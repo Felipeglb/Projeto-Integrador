@@ -138,19 +138,14 @@ namespace ProjetoIntegrador
                 conexao.Close();
             }
             
-            if (cboIDdepartamento.Text =="2")
+            if (Valida)
             {
                 MessageBox.Show("Login feito");              
-                MDIrh RH = new MDIrh();
-                RH.Show();
+                MDIdepartamentos frm = new MDIdepartamentos();
+                frm.Show();
                 this.Hide();
             }
-            //if (cboIDdepartamento.Text == "2")
-            
-                //MessageBox.Show("Login feito");
-                //MDIrh frm = new MDIrh();
-                //frm.Show();
-                //this.Hide();
+
             
 
         }

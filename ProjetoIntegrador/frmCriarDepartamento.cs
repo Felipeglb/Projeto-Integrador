@@ -38,6 +38,20 @@ namespace ProjetoIntegrador
         {
             testarConexao();
         }
+
+
+        void Limpar()
+        {
+            txtCodigo.Text = "";
+            mtbDataC.Text = "";
+            txtNomeDepartamento.Text = "";
+            cboStatus.SelectedIndex = -1;
+            txtArea.Text = "";
+            txtDescricao.Text = "";
+            txtObs.Text = "";
+            txtCodigo.Focus();
+        }
+
         private bool validar()
         {
 
@@ -65,103 +79,9 @@ namespace ProjetoIntegrador
             }
 
 
+
             return true;
         }
-
-
-
-
-        
-
-
-
-
-
-        private void btoLimpar_Click(object sender, EventArgs e)
-        {
-            txtCodigo.Text = "";
-            mtbDataC.Text = "";
-            txtNomeDepartamento.Text = "";
-            cboStatus.SelectedIndex = -1;
-            txtDescricao.Text = "";
-            txtObs.Text = "";
-            txtCodigo.Focus();
-
-        }
-
-        private void btoAlterar_Click(object sender, EventArgs e)
-        {
-            if (validar())
-            {
-
-                string sql = "update departamento set" +
-               " status_departamento='" + cboStatus.SelectedItem + "'" +
-               " nome_departamento= '" + txtNomeDepartamento.Text + "'," +
-               " area_departamento= '" + txtArea.Text + "'," +        
-               " descricao_departamento='" + txtDescricao.Text + "'," +
-               " observacao_departamento='" + txtObs.Text + "'," +
-               " where id_departamento=" + txtCodigo.Text;
-
-
-
-                SqlConnection conexao = new SqlConnection(stringConexao);
-                SqlCommand cmd = new SqlCommand(sql, conexao);
-                cmd.CommandType = CommandType.Text;
-
-                try
-                {
-                    conexao.Open();
-
-                    int i = cmd.ExecuteNonQuery();
-                    if (i == 1)
-                    {
-                        MessageBox.Show("Dados alterados com sucesso.");
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-                finally
-                {
-                    conexao.Close();
-                }
-            }
-        }
-
-        private void btoExcluir_Click(object sender, EventArgs e)
-        {
-            string sql = "delete from departamento where id_departamento= " + txtCodigo.Text;
-
-
-            SqlConnection conexao = new SqlConnection(stringConexao);
-            SqlCommand cmd = new SqlCommand(sql, conexao);
-            cmd.CommandType = CommandType.Text;
-
-            try
-            {
-                conexao.Open();
-                int i = cmd.ExecuteNonQuery();
-                if (i == 1)
-                {
-                    MessageBox.Show(" Area do Departamento excluido com sucesso");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            finally
-            {
-                conexao.Close();
-            }
-        }
-
-
-
-   
-
 
 
 
@@ -251,6 +171,80 @@ namespace ProjetoIntegrador
                     conn.Close();
                 }
             }
+        }
+
+        private void btoAlterar_Click_1(object sender, EventArgs e)
+        {
+            if (validar())
+            {
+
+                string sql = "update Departamento set" +
+               " status_departamento= '" + cboStatus.SelectedItem + "'," +
+               " nome_departamento= '" + txtNomeDepartamento.Text + "'," +
+               " area_departamento= '" + txtArea.Text + "'," +
+               " descricao_departamento= '" + txtDescricao.Text + "'," +
+               " Obs_departamento= '" + txtObs.Text + "'" +
+               " where id_departamento= " + txtCodigo.Text;
+
+
+
+                SqlConnection conexao = new SqlConnection(stringConexao);
+                SqlCommand cmd = new SqlCommand(sql, conexao);
+                cmd.CommandType = CommandType.Text;
+
+                try
+                {
+                    conexao.Open();
+
+                    int i = cmd.ExecuteNonQuery();
+                    if (i == 1)
+                    {
+                        MessageBox.Show("Dados alterados com sucesso.");
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    conexao.Close();
+                }
+            }
+        }
+
+        private void btoExcluir_Click_1(object sender, EventArgs e)
+        {
+            string sql = "delete from departamento where id_departamento= " + txtCodigo.Text;
+
+
+            SqlConnection conexao = new SqlConnection(stringConexao);
+            SqlCommand cmd = new SqlCommand(sql, conexao);
+            cmd.CommandType = CommandType.Text;
+
+            try
+            {
+                conexao.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i == 1)
+                {
+                    MessageBox.Show(" Area do Departamento excluido com sucesso");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                conexao.Close();
+            }
+        }
+
+        private void btoLimpar_Click(object sender, EventArgs e)
+        {
+            Limpar();
         }
     }
 }
