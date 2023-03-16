@@ -53,3 +53,5 @@ C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.frmGridUsuario.resources
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.MDIDepart.resources
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.frmPlanos.resources
+C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.frmContrato.resources
+C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.frmParceiro.resources

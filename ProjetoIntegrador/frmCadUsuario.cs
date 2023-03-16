@@ -12,7 +12,7 @@ namespace ProjetoIntegrador
         {
             InitializeComponent();
         }
-        public void testarconexao()
+        private void testarconexao()
         {
             SqlConnection conn = new SqlConnection(stringConexao);
 

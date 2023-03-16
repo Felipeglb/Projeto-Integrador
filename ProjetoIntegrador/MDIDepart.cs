@@ -54,15 +54,25 @@ namespace ProjetoIntegrador
             frm.Show();
         }
 
+
+
+        private void cadastroClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmParceiro frm = new frmParceiro();
+            frm.Show();
+        }
+
         private void criarDepartamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmContrato frm = new frmContrato();
+            frm.Show();
+        }
+
+        private void criarDepartamentosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCriarDepartamento frm = new frmCriarDepartamento();
             frm.Show();
         }
 
-        private void cadastroClienteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
