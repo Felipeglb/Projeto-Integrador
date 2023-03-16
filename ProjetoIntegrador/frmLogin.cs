@@ -24,7 +24,7 @@ namespace ProjetoIntegrador
            "User ID=sa;" +
            "Password=123456";
 
-        private void testarconexao()
+        public void testarconexao()
         {
             SqlConnection conn = new SqlConnection(stringConexao);
 
@@ -115,10 +115,10 @@ namespace ProjetoIntegrador
                 {
                     Valida = true;
 
-                    IDUsuario = reader[0].ToString();
-                    NomeUsuario = reader[1].ToString();
-                    LoginUsuario = reader[2].ToString();
-                    idDepartamento = reader[3].ToString();
+                    MessageBox.Show("Login feito");
+                    MDIDepart frm = new MDIDepart();
+                    this.Hide();
+                    frm.Show();
                 }
                 else
                 {
@@ -138,13 +138,7 @@ namespace ProjetoIntegrador
                 conexao.Close();
             }
             
-            if (Valida)
-            {
-                MessageBox.Show("Login feito");              
-                MDIdepartamentos frm = new MDIdepartamentos();
-                frm.Show();
-                this.Hide();
-            }
+
 
             
 

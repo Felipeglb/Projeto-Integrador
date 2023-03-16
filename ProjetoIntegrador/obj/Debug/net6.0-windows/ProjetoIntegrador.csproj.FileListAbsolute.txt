@@ -50,4 +50,6 @@ C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.frmCriarDepartamento.resources
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.frmLogin.resources
 C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.frmCadUsuario.resources
-C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.MDIdepartamentos.resources
+C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.frmGridUsuario.resources
+C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.MDIDepart.resources
+C:\Users\felipe.glbezerra\source\repos\Projeto-Integrador\ProjetoIntegrador\obj\Debug\net6.0-windows\ProjetoIntegrador.frmPlanos.resources

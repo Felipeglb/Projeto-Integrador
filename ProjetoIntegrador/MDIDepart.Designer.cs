@@ -1,6 +1,6 @@
 ﻿namespace ProjetoIntegrador
 {
-    partial class MDIdepartamentos
+    partial class MDIDepart
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -31,12 +31,15 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.rHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.planosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.cadUsuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.financeiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.criarDepartamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -45,22 +48,45 @@
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rHToolStripMenuItem,
-            this.financeiroToolStripMenuItem,
+            this.fiToolStripMenuItem,
             this.vendasToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip.Size = new System.Drawing.Size(805, 24);
+            this.menuStrip.Size = new System.Drawing.Size(737, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
             // rHToolStripMenuItem
             // 
             this.rHToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadUsuáriosToolStripMenuItem});
+            this.usuáriosToolStripMenuItem});
             this.rHToolStripMenuItem.Name = "rHToolStripMenuItem";
             this.rHToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
             this.rHToolStripMenuItem.Text = "RH";
+            // 
+            // usuáriosToolStripMenuItem
+            // 
+            this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.usuáriosToolStripMenuItem.Text = "Usuários";
+            this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
+            // 
+            // fiToolStripMenuItem
+            // 
+            this.fiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.planosToolStripMenuItem,
+            this.criarDepartamentoToolStripMenuItem});
+            this.fiToolStripMenuItem.Name = "fiToolStripMenuItem";
+            this.fiToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.fiToolStripMenuItem.Text = "Financeiro";
+            // 
+            // planosToolStripMenuItem
+            // 
+            this.planosToolStripMenuItem.Name = "planosToolStripMenuItem";
+            this.planosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.planosToolStripMenuItem.Text = "Planos";
+            this.planosToolStripMenuItem.Click += new System.EventHandler(this.planosToolStripMenuItem_Click);
             // 
             // statusStrip
             // 
@@ -69,7 +95,7 @@
             this.statusStrip.Location = new System.Drawing.Point(0, 501);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            this.statusStrip.Size = new System.Drawing.Size(805, 22);
+            this.statusStrip.Size = new System.Drawing.Size(737, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -79,38 +105,41 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // cadUsuáriosToolStripMenuItem
+            // criarDepartamentoToolStripMenuItem
             // 
-            this.cadUsuáriosToolStripMenuItem.Name = "cadUsuáriosToolStripMenuItem";
-            this.cadUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cadUsuáriosToolStripMenuItem.Text = "Usuários";
-            this.cadUsuáriosToolStripMenuItem.Click += new System.EventHandler(this.cadUsuáriosToolStripMenuItem_Click);
-            // 
-            // financeiroToolStripMenuItem
-            // 
-            this.financeiroToolStripMenuItem.Name = "financeiroToolStripMenuItem";
-            this.financeiroToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
-            this.financeiroToolStripMenuItem.Text = "Financeiro";
+            this.criarDepartamentoToolStripMenuItem.Name = "criarDepartamentoToolStripMenuItem";
+            this.criarDepartamentoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.criarDepartamentoToolStripMenuItem.Text = "CriarDepartamento";
+            this.criarDepartamentoToolStripMenuItem.Click += new System.EventHandler(this.criarDepartamentoToolStripMenuItem_Click);
             // 
             // vendasToolStripMenuItem
             // 
+            this.vendasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastroClienteToolStripMenuItem});
             this.vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
             this.vendasToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.vendasToolStripMenuItem.Text = "Vendas";
             // 
-            // MDIrh
+            // cadastroClienteToolStripMenuItem
+            // 
+            this.cadastroClienteToolStripMenuItem.Name = "cadastroClienteToolStripMenuItem";
+            this.cadastroClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastroClienteToolStripMenuItem.Text = "Cadastro Cliente";
+            this.cadastroClienteToolStripMenuItem.Click += new System.EventHandler(this.cadastroClienteToolStripMenuItem_Click);
+            // 
+            // MDIDepart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 523);
+            this.ClientSize = new System.Drawing.Size(737, 523);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "MDIrh";
-            this.Text = "MDIrh";
-            this.Load += new System.EventHandler(this.MDIrh_Load);
+            this.Name = "MDIDepart";
+            this.Text = "Departamentos";
+            this.Load += new System.EventHandler(this.MDIDepart_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);
@@ -127,9 +156,12 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.ToolTip toolTip;
         private ToolStripMenuItem rHToolStripMenuItem;
-        private ToolStripMenuItem cadUsuáriosToolStripMenuItem;
-        private ToolStripMenuItem financeiroToolStripMenuItem;
+        private ToolStripMenuItem usuáriosToolStripMenuItem;
+        private ToolStripMenuItem fiToolStripMenuItem;
+        private ToolStripMenuItem planosToolStripMenuItem;
+        private ToolStripMenuItem criarDepartamentoToolStripMenuItem;
         private ToolStripMenuItem vendasToolStripMenuItem;
+        private ToolStripMenuItem cadastroClienteToolStripMenuItem;
     }
 }
 

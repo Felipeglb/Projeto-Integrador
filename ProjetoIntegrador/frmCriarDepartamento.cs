@@ -13,7 +13,7 @@ namespace ProjetoIntegrador
 {
     public partial class frmCriarDepartamento : Form
     {
-        string stringConexao = " data source = Localhost; initial Catalog=ProjetoIntegradorT_13;User ID=sa; password=123456";
+        string stringConexao = frmLogin.stringConexao;
         private void testarConexao()
         {
             SqlConnection conn = new SqlConnection(stringConexao);
@@ -87,8 +87,8 @@ namespace ProjetoIntegrador
 
         private void btoSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-            //this.Close();
+            //Application.Exit();
+            this.Close();
         }
 
         private void btoPesquisar_Click(object sender, EventArgs e)

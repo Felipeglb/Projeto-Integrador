@@ -6,8 +6,13 @@ namespace ProjetoIntegrador
     {
         //string stringConexao = frmLogin.stringConexao;
 
-        public static string stringConexao = " data source = Localhost; initial Catalog=ProjetoIntegradorT_13;User ID=sa; password=123456";
-        private void TestarConexao()
+        string stringConexao = frmLogin.stringConexao;
+
+        public frmCadUsuario()
+        {
+            InitializeComponent();
+        }
+        public void testarconexao()
         {
             SqlConnection conn = new SqlConnection(stringConexao);
 
@@ -22,14 +27,10 @@ namespace ProjetoIntegrador
                 Application.Exit();
             }
         }
-        public frmCadUsuario()
-        {
-            InitializeComponent();
-        }
 
         private void CadUsuario_Load(object sender, EventArgs e)
         {
-            TestarConexao();
+            testarconexao();
             ComboBox();
         }
 
@@ -146,8 +147,8 @@ namespace ProjetoIntegrador
 
         private void btoSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-            //this.Close();
+            //Application.Exit();
+            this.Close();
         }
 
         private void btoCadastro_Click_1(object sender, EventArgs e)
@@ -239,7 +240,7 @@ namespace ProjetoIntegrador
                 }
                 finally
                 {
-                    // CarregarDataGrid();
+                     
                     conn.Close();
                 }
             }
@@ -320,11 +321,12 @@ namespace ProjetoIntegrador
 
         private void btoPesquisa_Click(object sender, EventArgs e)
         {
-            //if (txtCodigo.Text.Trim() == "")
+            if (txtCodigo.Text.Trim() == "")
             {
-                //frmProdutoPesquisa dor = new frmProdutoPesquisa();
-                //dor.ShowDialog();
-                //txtCodigo.Text = dor._codigo;
+                frmGridUsuario user = new frmGridUsuario();
+                user.ShowDialog();
+                txtCodigo.Text = user._codigo.ToString();
+                
             }
 
             string sql = "select * from Usuario where id_Usuario =" + txtCodigo.Text;
