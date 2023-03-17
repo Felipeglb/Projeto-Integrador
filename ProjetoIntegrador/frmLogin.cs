@@ -19,7 +19,7 @@ namespace ProjetoIntegrador
        
         }
         public static string stringConexao = "" +
-           "Data Source=localhost;" +
+           "Data Source= localhost ;" +
            "Initial Catalog=ProjetoIntegradorT_13;" +
            "User ID=sa;" +
            "Password=123456";

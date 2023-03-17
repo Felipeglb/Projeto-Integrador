@@ -37,32 +37,32 @@ namespace ProjetoIntegrador
             }
         }
 
-         private void frmGridUsuario_Load(object sender, EventArgs e)
+        private void frmGridUsuario_Load(object sender, EventArgs e)
         {
             TestarConexao();
             CarregarDataGrid();
         }
         private void CarregarDataGrid()
         {
-            string sql = "select id_Produto as 'Codigo'," +
-"Status_Usuario," +
-"nome_Usuario," +
-"CPF_Usuario," +
-"Login_Usuario," +
-"Senha_Usuario," +
-"id_departamento_Usuario," +
-"cep_Usuario," +
-"logradouro_Usuario," +
-"Numero_Usuario," +
-"bairro_Usuario," +
-"cidade_Usuario," +
-"uf_Usuario," +
-"Complemento_Usuario," +
-"telefone1_Usuario," +
-"telefone2_Usuario," +
-"email_Usuario," +
-"Obs_Usuario" +
-    "from Produto where nome_Usuario like '%" + txtPesquisaUser.Text + "%'";
+            string sql = "select id_Usuario as 'ID'," +
+"Status_Usuario as 'status'," +
+"nome_Usuario as 'Nome'," +
+"CPF_Usuario as 'CPF'," +
+"Login_Usuario as 'Login'," +
+
+"id_departamento_Usuario as 'Departamento'," +
+"cep_Usuario as 'CEP'," +
+"logradouro_Usuario as 'Rua'," +
+"Numero_Usuario as 'Nº'," +
+"bairro_Usuario as 'Bairro'," +
+"cidade_Usuario as 'Cidade'," +
+"uf_Usuario as 'UF'," +
+"Complemento_Usuario as 'Complemento'," +
+"telefone1_Usuario as 'Tel1'," +
+"telefone2_Usuario as 'Tel2'," +
+"email_Usuario as 'E-mail'," +
+"Obs_Usuario as 'Obs'" +
+    "from Usuario where nome_Usuario like '%" + txtPesquisaUser.Text + "%'";
 
 
             SqlConnection conn = new SqlConnection(stringConexao);
@@ -91,15 +91,11 @@ namespace ProjetoIntegrador
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
-        }
-
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-            _codigo = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+            _codigo = int.Parse(dataGridView1.CurrentRow.Cells["ID"].Value.ToString());
             this.Close();
         }
     }
